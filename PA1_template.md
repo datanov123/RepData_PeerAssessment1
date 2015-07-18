@@ -145,7 +145,7 @@ stepsPerInterval_DOW <- aggregate(steps ~ interval + dayofweek, finalData, mean)
 
 library(lattice)
 
-xyplot(stepsPerInterval_DOW$steps ~ stepsPerInterval_DOW$interval | stepsPerInterval_DOW$dayofweek, main="Average steps per interval by day of week", xlab="Interval", ylab="Steps", type="l", layout=c(1,2))
+xyplot(stepsPerInterval_DOW$steps ~ stepsPerInterval_DOW$interval | stepsPerInterval_DOW$dayofweek, main="Average steps per interval by day of week", xlab="Interval", ylab="Steps", type="l", layout=c(1,2)) 
 ```
 
 ![plot of chunk unnamed-chunk-5](figure/unnamed-chunk-5-1.png) 
